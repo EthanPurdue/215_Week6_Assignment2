@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- list tags to display animals, note no class, just normal display-->
+    <ol>
+      <li>Stella</li>
+      <li>Cody</li>  
+      <li>Mango</li>  
+      <li>Lucy</li>  
+      <li>Buhmie</li> 
+    </ol>
+  
+    <p>
+      <label for="petNum">Pet Number:</label>
+      <input type="text" id="petNum" name="petNum" maxlength="4" size="4"></input>
+      <!--The line below was retrieved from CoPilot. I know that I need to pass the value of the input to
+      the showInfo() function, but had no idea how. I tried to mess around a bit but to no success.
+      Also needed help in showInfo() function in order to know how to properly take input for function. 
+      My confusion was more of using the button rather than using arrays, and I now know how it works-->
+      <button onclick="showInfo(document.getElementById('petNum').value)">Click for information!</button>
+    </p>
+
+    <!--Below is the class that will display the information for corresponding pet number-->
+    <p class = "selectedPetInfo"></p>
+
+      <script src = "animals.js" defer></script>
+  </body>
+</html>
